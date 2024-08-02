@@ -32,20 +32,17 @@ class MenuCategory {
 }
 
 void main() {
-  // ساخت آیتم‌های منو
   MenuItem coffee = MenuItem('Coffee', 3.0);
   MenuItem tea = MenuItem('Tea', 2.5);
   MenuItem pizza = MenuItem('Pizza', 12.0);
   MenuItem cake = MenuItem('Cake', 4.5);
 
-  // ساخت دسته‌بندی‌ها
   MenuCategory drinks = MenuCategory('Drinks');
   MenuCategory hotDrinks = MenuCategory('Hot Drinks');
   MenuCategory coldDrinks = MenuCategory('Cold Drinks');
   MenuCategory mainCourses = MenuCategory('Main Courses');
   MenuCategory desserts = MenuCategory('Desserts');
 
-  // اضافه کردن آیتم‌ها به دسته‌بندی‌ها
   hotDrinks.addItem(coffee);
   hotDrinks.addItem(tea);
   drinks.addSubcategory(hotDrinks);
@@ -53,7 +50,6 @@ void main() {
   mainCourses.addItem(pizza);
   desserts.addItem(cake);
 
-  // نمایش منو
   drinks.display('');
   mainCourses.display('');
   desserts.display('');
